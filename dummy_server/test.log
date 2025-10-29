@@ -1,0 +1,5 @@
+2024-07-21 15:34:02,123 ERROR [com.example.service.UserService] - Failed to fetch user details for ID: 42
+java.sql.SQLException: Connection timed out while accessing the user database
+	at com.example.db.UserRepository.findById(UserRepository.java:87)
+	at com.example.service.UserService.getUser(UserService.java:45)
+Caused by: java.net.SocketTimeoutException: Read timed out
