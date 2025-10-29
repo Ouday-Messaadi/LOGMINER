@@ -6,9 +6,9 @@ pipeline {
     DB_USERNAME = 'postgres'
     DB_PASSWORD = 'f56724'
     PORT = '8080'
-    ISSUER_URI = 'https://login.microsoftonline.com/feb7950e-f92a-4705-ad14-851271a1e0e7/v2.0'
-    CLIENT_ID = 'aad31e0a-08bf-4f4a-a108-18afdedb340e'
-    CLIENT_SECRET = 'WS_8Q~pX1xUWWcEOPFy4aLX6rF0XlB-lUtDaxaza'
+    ISSUER_URI = 'https://login.microsoftonline.com/XXXXXXXXXXXXXXXXXXXXXXXXXX/v2.0'
+    CLIENT_ID = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+    CLIENT_SECRET = 'WS_8Q~pX1xUWWcXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 
     RAG_URL = 'http://localhost:8000/rag/parse'
     HINT_URL = 'http://localhost:8000/hint/gen'
@@ -33,7 +33,7 @@ pipeline {
   stages {
     stage('Clone') {
       steps {
-        git url: 'https://github.com/mohamed-ayedi/log-analyzer-backend.git',
+        git url: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
             branch: 'main',
             credentialsId: 'github_token1'
       }
